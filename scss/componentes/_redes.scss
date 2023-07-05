@@ -1,0 +1,20 @@
+ /* CUADRO DE REDES */
+ /* Mapas, Rgba, Listas y Extend*/
+.square-box {
+    width: map-get($caja_redes, width ); /* Mapa */
+    border-style: map-get($caja_redes , border-style );
+    background-color: rgba($color-black, 0.7); /* Rgba */
+    text-decoration: map-get($caja_redes, text-decoration );
+    border-radius: nth($syze, 2 ); /* Lista */
+}
+
+.redes {
+    width: 32px;
+    @extend %marpad0; /* Extend */
+}
+
+#imgIg {
+    width: 27px;
+    margin: 4px;
+}
+  

@@ -1,0 +1,42 @@
+  /* BARRA DE NAVEGACION */
+  header {
+    background-color: nth($colores, 4 ); /* Lista */
+    padding: 2px;
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: nth($colores, 3 ); /* Lista */
+      padding: nth($syze, 2 ); /* Lista */
+  
+      .navbar-nav {
+        list-style-type: none;
+        @include marpad0(0px, 0px); /* Mixin */
+        display: flex;
+  
+        .nav-item {
+          margin-right: nth($syze, 2 );
+  
+          .nav-link {
+            font-size: nth($syze, 3 ); /* Lista */
+            border-bottom: solid 2px;
+            text-decoration: solid;
+            color: nth($colores , 1 ); /* Lista */
+            padding: 5px;
+            margin-left: 40px;
+  
+            &:hover {
+              background-color: nth($colores, 5 ); /* Lista */
+            }
+          }
+  
+          &.active {
+            .nav-link {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }

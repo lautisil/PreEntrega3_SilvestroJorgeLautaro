@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* VARIABLES */ /* LISTAS */ /* MAPS */ /* ANIMACIONES */
+.agrandar {
+  transition: all 1s;
+}
+
+.agrandar:hover {
+  transform: scale(1.1);
+}
+
+.aparece {
+  opacity: 0;
+  animation: aparece 1.3s forwards;
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.anim-der-izq {
+  animation: mover-izq-der 2s;
+}
+
+@keyframes mover-izq-der {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+.anim-izq-der {
+  animation: mover-der-izq 2s;
+}
+
+@keyframes mover-der-izq {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+/* EXTEND */
+.redes {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* MIXIN */ /* BARRA DE NAVEGACION */
+header {
+  background-color: #b5b5b5; /* Lista */
+  padding: 2px;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3c3c; /* Lista */
+  padding: 10px; /* Lista */
+}
+header .navbar .navbar-nav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  /* Mixin */
+  display: flex;
+}
+header .navbar .navbar-nav .nav-item {
+  margin-right: 10px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 20px; /* Lista */
+  border-bottom: solid 2px;
+  text-decoration: solid;
+  color: white; /* Lista */
+  padding: 5px;
+  margin-left: 40px;
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  background-color: #2b2b2b; /* Lista */
+}
+header .navbar .navbar-nav .nav-item.active .nav-link {
+  font-weight: bold;
+}
+
+/* BODY */
+body {
+  background: rgb(41, 130, 212);
+  background: -moz-linear-gradient(0deg, rgb(41, 130, 212) 0%, rgb(175, 216, 254) 100%);
+  background: -webkit-linear-gradient(0deg, rgb(41, 130, 212) 0%, rgb(175, 216, 254) 100%);
+  background: linear-gradient(0deg, rgb(41, 130, 212) 0%, rgb(175, 216, 254) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2982d4",endColorstr="#afd8fe",GradientType=1);
+  font-family: "Roboto", sans-serif;
+}
+body h1 {
+  background-color: rgb(80, 80, 80);
+  font-size: 30px;
+  color: white;
+}
+
+.img {
+  width: 300px;
+}
+
+/* CUADRO DE REDES */
+/* Mapas, Rgba, Listas y Extend*/
+.square-box {
+  width: 123px; /* Mapa */
+  border-style: groove;
+  background-color: rgba(0, 0, 0, 0.7); /* Rgba */
+  text-decoration: none;
+  border-radius: 10px; /* Lista */
+}
+
+.redes {
+  width: 32px;
+  /* Extend */
+}
+
+#imgIg {
+  width: 27px;
+  margin: 4px;
+}
+
+/* FOOTER */
+.imgFooter {
+  width: 100%;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

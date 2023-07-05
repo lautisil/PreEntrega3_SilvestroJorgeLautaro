@@ -1,0 +1,52 @@
+/* ANIMACIONES */
+.agrandar {
+  transition:all 1s;
+}
+
+.agrandar:hover {
+  transform:scale(1.1);
+}
+
+
+.aparece {
+  opacity: 0;
+  animation: aparece 1.3s forwards;
+}
+@keyframes aparece {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+.anim-der-izq {
+    animation: mover-izq-der 2s;
+  }
+  
+  @keyframes mover-izq-der{
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translate(0%);
+    }
+  }
+  
+  
+  .anim-izq-der {
+    animation: mover-der-izq 2s;
+  }
+  
+  @keyframes mover-der-izq {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translate(0%);
+    }
+  }
