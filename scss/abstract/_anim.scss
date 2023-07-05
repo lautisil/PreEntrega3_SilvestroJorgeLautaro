@@ -26,27 +26,40 @@
 
 .anim-der-izq {
     animation: mover-izq-der 2s;
+}
+
+@keyframes mover-izq-der{
+  0% {
+    transform: translateX(100%);
   }
-  
-  @keyframes mover-izq-der{
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translate(0%);
-    }
+  100% {
+    transform: translate(0%);
   }
+}
   
-  
-  .anim-izq-der {
-    animation: mover-der-izq 2s;
+
+.anim-izq-der {
+  animation: mover-der-izq 2s;
+}
+@keyframes mover-der-izq {
+  0% {
+    transform: translateX(-100%);
   }
-  
-  @keyframes mover-der-izq {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translate(0%);
-    }
+  100% {
+    transform: translate(0%);
   }
+}
+
+.flip-rotate {
+  animation: flip-rotate 4s linear infinite;
+}
+@keyframes flip-rotate {
+  0% {
+    transform: perspective(800px) rotateY(0);
+  }
+  100% {
+    transform: perspective(800px) rotateY(360deg);
+  }
+}
+  
+ 

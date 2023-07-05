@@ -1,0 +1,24 @@
+/* Media */
+@media (max-width: 1000px) {
+    .img {
+        width: 100%;
+    }
+
+    .video {
+        width: 360px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img {
+        width: 50%;
+    }
+    .container-text {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    body .titulo {
+        font-size: 150%;
+    }
+}
