@@ -2,9 +2,8 @@
  /* Mapas, Rgba, Listas y Extend*/
 .square-box {
     width: map-get($caja_redes, width ); /* Mapa */
-    border-style: map-get($caja_redes , border-style );
+    border-style: map-get($caja_redes , border-style ); /* Mapa */
     background-color: rgba($color-black, 0.7); /* Rgba */
-    text-decoration: map-get($caja_redes, text-decoration );
     border-radius: nth($syze, 2 ); /* Lista */
 }
 
@@ -20,6 +19,16 @@
     width: 32px;
     @extend %marpad0; /* Extend */
 }
+
+.redes-letras {
+    color: white;
+    text-decoration: map-get($caja_redes, text-decoration ); /* Mapa */
+}
+
+.redes-letras:hover {
+    color: white;
+}
+
 
 #imgIg {
     width: 27px;

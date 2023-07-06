@@ -28,7 +28,7 @@
   }
 }
 .anim-der-izq {
-  animation: mover-izq-der 2s;
+  animation: mover-izq-der 1.3s;
 }
 
 @keyframes mover-izq-der {
@@ -40,7 +40,7 @@
   }
 }
 .anim-izq-der {
-  animation: mover-der-izq 2s;
+  animation: mover-der-izq 1.3s;
 }
 
 @keyframes mover-der-izq {
@@ -52,7 +52,7 @@
   }
 }
 .flip-rotate {
-  animation: flip-rotate 4s linear infinite;
+  animation: flip-rotate 3s linear infinite;
 }
 
 @keyframes flip-rotate {
@@ -123,6 +123,7 @@ body .titulo {
 
 .img {
   width: 300px;
+  height: 180px;
 }
 
 .video {
@@ -145,9 +146,8 @@ body .titulo {
 /* Mapas, Rgba, Listas y Extend*/
 .square-box {
   width: 123px; /* Mapa */
-  border-style: groove;
+  border-style: groove; /* Mapa */
   background-color: rgba(0, 0, 0, 0.7); /* Rgba */
-  text-decoration: none;
   border-radius: 10px; /* Lista */
 }
 
@@ -164,6 +164,15 @@ body .titulo {
 .redes {
   width: 32px;
   /* Extend */
+}
+
+.redes-letras {
+  color: white;
+  text-decoration: none; /* Mapa */
+}
+
+.redes-letras:hover {
+  color: white;
 }
 
 #imgIg {

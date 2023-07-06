@@ -25,7 +25,7 @@
 
 
 .anim-der-izq {
-    animation: mover-izq-der 2s;
+    animation: mover-izq-der 1.3s;
 }
 
 @keyframes mover-izq-der{
@@ -39,7 +39,7 @@
   
 
 .anim-izq-der {
-  animation: mover-der-izq 2s;
+  animation: mover-der-izq 1.3s;
 }
 @keyframes mover-der-izq {
   0% {
@@ -50,8 +50,9 @@
   }
 }
 
+
 .flip-rotate {
-  animation: flip-rotate 4s linear infinite;
+  animation: flip-rotate 3s linear infinite;
 }
 @keyframes flip-rotate {
   0% {
