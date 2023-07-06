@@ -200,6 +200,10 @@ body .titulo {
   .img {
     width: 70%;
   }
+  .video {
+    width: 100%;
+    height: 100%;
+  }
   .container-text {
     padding-left: 70px;
     padding-right: 70px;
