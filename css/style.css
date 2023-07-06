@@ -130,6 +130,10 @@ body .titulo {
   height: 255px;
 }
 
+.font-text {
+  font-size: 18px;
+}
+
 .container-text {
   padding-top: 20px;
   padding-left: 70px;
