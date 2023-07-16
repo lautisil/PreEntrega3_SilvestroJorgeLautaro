@@ -40,25 +40,69 @@
 
 
     <main>
+        
         <h1 class="text-center mt-3 p-3 titulo">TALLER DE ELECTRICIDAD RS</h1>
 
-        <div class="container mt-5 mb-3">
-            <h3 class="text-center aparece">¿DONDE ESTAMOS?</h3>
-        </div>
+        <section class="row">
+            <section class="col-6 col-sm-6">
+                <div class="container mt-5 mb-3">
+                    <h3 class="text-center">¿DONDE ESTAMOS?</h3>
+                </div>
+                <div class="container p-2 text-center aparece">
+                    <h3 class="anim-der-izq">HORARIOS DE ATENCION</h3>
+                    <h4 class="anim-izq-der">Lunes a Viernes</h4>
+                    <h4 class="anim-der-izq">9:00hs A 17:00hs</h4>
+                </div>
+                <div class="container p-1 text-center aparece">
+                    <h4>WhatsApp: +351 3338888</h4>
+                    <h4>INSTAGRAM: tallerrselectricidad</h4>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1701.867257381207!2d-64.166774!3d-31.448975!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzU2LjUiUyA2NMKwMTAnMDAuNyJX!5e0!3m2!1ses-419!2sar!4v1684767127142!5m2!1ses-419!2sar" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
 
-        <div class="container p-2 text-center aparece">
-            <h3 class="anim-der-izq">HORARIOS DE ATENCION</h3>
-            <h4 class="anim-izq-der">Lunes a Viernes</h4>
-            <h4 class="anim-der-izq">9:00hs A 17:00hs</h4>
-        </div>
-        <div class="container p-1 text-center aparece">
-            <h4>WhatsApp: +351 3338888</h4>
-            <h4>INSTAGRAM: tallerrselectricidad</h4>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1701.867257381207!2d-64.166774!3d-31.448975!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzU2LjUiUyA2NMKwMTAnMDAuNyJX!5e0!3m2!1ses-419!2sar!4v1684767127142!5m2!1ses-419!2sar" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <section class="col-6 col-sm-6">
+                <div class="container mt-5 mb-3">
+                    <h3 class="text-center">HACENOS TU CONSULTA</h3>
+                </div>
+                <div class="container mt-4 form-container">
+                
+                  <form class="ml-5 mr-5">
+
+                    <div class="p-2">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" class="form-hijo" name="nombre">
+                    </div>
+
+                    <div class="p-2">
+                      <label for="apellido">Apellido:</label>
+                      <input type="text" class="form-hijo" name="modelo">
+                    </div>
+
+                    <div class="p-2">
+                      <label for="mail">E-Mail</label>
+                      <input type="text" class="form-hijo" name="modelo" required>
+                    </div>
+
+                    <div class="p-2">
+                      <label for="modelo">Automovil (Marca, modelo, año):</label>
+                      <input type="text" class="form-hijo" name="apellido" required>
+                    </div>
+
+                    <div class="p-2">
+                      <label for="consulta">Consulta</label>
+                      <input type="text" class="form-consulta" name="modelo" required>
+                    </div>
+
+                    <button type="submit"  value="enviar">Enviar</button>
+                    <button type="reset">Limpiar</button>
+
+                  </form>
+                </div>
+            </sectin>
+        </section>
 
         <!-- Icono girando -->
-        <div class="text-center flip-rotate">
+        <div class="col-12 text-center flip-rotate">
             <img class="icon" src="../img/rslogo.png" alt="icono">
         </div>
         
@@ -67,6 +111,7 @@
             <a class="redes-letras" href="#"><img class="redes" src="../img/wsp_logo.png" alt="WhatsApp" >WhatsApp</a>
             <a class="redes-letras" href="#"><img class="redes" id="imgIg" src="../img/insta_logo.png" alt="Instagram">Instagram</a>
         </div>
+
     </main>
 
     <footer class="bg-dark text-white text-center p-3">
@@ -84,6 +129,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
 </body>
 
